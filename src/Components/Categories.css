@@ -1,0 +1,41 @@
+.Category {
+  width: 30%;
+  color: rgba(255, 255, 255, 0.835);
+  /* text-align: center; */
+  /* height: 70%; */
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: 500;
+  font-size: 1.2rem;
+  /* color: rgba(0, 0, 0, 0.753); */
+  position: relative;
+}
+.Category .CategoryImg {
+  width: 100%;
+  margin-bottom: 5em;
+  height: 15vw;
+  /* text-align: center; */
+}
+.Category .CategoryImg img {
+  cursor: pointer;
+  height: 25vw;
+  width: 80%;
+  /* object-fit: fill; */
+  object-fit: cover;
+  border-radius: 25% 0 25% 0;
+}
+.Category .CategoryName {
+  width: 15vw;
+  background-color: rgba(0, 0, 0, 0.542);
+  border-radius: 50% 0 50% 0;
+  position: absolute;
+  padding: 0.6em 1.5em;
+  /* left: 50%; */
+  top: 60%;
+  left: 40%;
+  z-index: 1;
+  text-align: center;
+  /* bottom: 0; */
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}

@@ -1,0 +1,31 @@
+.ContainPosts {
+  width: 30% !important;
+}
+.MainPosts {
+  /* width: 20em !important;
+  height: 70% !important; */
+  color: #805541;
+  /* color: sienna; */
+  /* background-color: #805541; */
+  /* border-radius: 20% 20% 20% 20% !important; */
+}
+.PostImg {
+  /* max-width: 100%; */
+  /* width: 100%; */
+  width: 92%;
+  height: 30vw;
+  /* object-fit: cover; */
+  /* background: transparent no-repeat center;
+  background-size: cover; */
+  /* object-fit: cover; */
+  object-position: center;
+}
+
+.card-Des {
+  font-size: 1rem;
+}
+.PostDes {
+  width: 40%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

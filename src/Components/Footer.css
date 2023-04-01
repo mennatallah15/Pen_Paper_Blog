@@ -1,0 +1,29 @@
+.ContainFooter {
+  color: #222222c2 !important;
+  /* height: 50vw; */
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
+  line-height: 4em !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase;
+}
+.ContainFooter {
+  background-color: #f9f5f0 !important;
+}
+
+.FooterLogo {
+  width: 23%;
+  margin: 0 auto;
+  position: relative;
+  /* bottom: 3rem; */
+}
+
+#FooterLinksLeft h1 {
+  position: relative;
+  left: 10rem;
+}
+#FooterLinksRight h1 {
+  position: relative;
+  right: 10rem;
+}

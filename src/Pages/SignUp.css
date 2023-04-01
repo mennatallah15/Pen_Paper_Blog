@@ -1,0 +1,65 @@
+.Container-Form {
+  background-color: #f9f5f0;
+  height: 100%;
+}
+.register {
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+.register .registerPhoto img {
+  max-width: 100%;
+  height: 40vw;
+  /* margin: 0 auto; */
+  margin-top: 2em;
+  object-fit: cover;
+  border-radius: 20% 0 20% 0;
+}
+.register .Form h1 {
+  color: sienna;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-right: 2em;
+  position: relative;
+  margin-right: 10rem;
+}
+.register .Form {
+  width: 40vw;
+
+  /* margin: 0 auto; */
+}
+.register .registerPhoto {
+  width: 40%;
+}
+.register .Form input,
+.register .Form button {
+  width: 25vw !important;
+  background-color: #f9f5f0;
+  color: black;
+  margin-bottom: 1rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.51); */
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
+}
+.register .Form button {
+  border: none;
+  background-color: sienna;
+  color: #f9f5f0;
+}
+.register .Form h2 {
+  color: #750421;
+  font-size: 0.8rem;
+  margin-bottom: 1em;
+  display: inline;
+  content: "⚠ ";
+}
+.Form span {
+  display: block;
+  color: black;
+}
+
+/* .register .registerForm h2::before {
+  display: inline;
+  content: "⚠ ";
+} */

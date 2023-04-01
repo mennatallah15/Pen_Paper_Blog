@@ -1,0 +1,86 @@
+.mainDev {
+  width: 100%;
+  position: relative;
+}
+.contain {
+  width: 72%;
+  background-color: #d6d3c9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* left: 50px; */
+  /* z-index: 1; */
+  margin: 0 auto;
+}
+.containTitle h1 {
+  position: relative;
+  left: 6rem;
+  color: black;
+}
+.containTitle p {
+  font-size: 0.9rem;
+  position: relative;
+  left: 6rem;
+  width: 41%;
+  color: rgba(0, 0, 0, 0.638);
+}
+
+.mainDev .photo {
+  /* width: 40%; */
+  position: relative;
+  left: 0px;
+  top: -15px;
+  z-index: 1;
+  /* background-image: url("https://selena.pixandhue.com/wp-content/uploads/2022/02/haute-stock-photography-1.png"); */
+  background-size: cover;
+}
+.photo img {
+  max-width: 100%;
+  height: 50vw;
+  /* height: auto; */
+}
+
+.Image {
+  width: auto;
+  position: absolute;
+  left: 8%;
+  top: 6%;
+  z-index: 2;
+}
+.Image img {
+  max-width: 100%;
+  border-radius: 50% 50% 0 0;
+  /* width: auto; */
+  height: 50vw;
+  object-fit: cover;
+  overflow: hidden;
+}
+.Boxes {
+  position: relative;
+  bottom: 1em;
+  background-color: #f2ebe1;
+  width: 100%;
+  height: 25rem;
+  padding: 5em;
+  align-items: center;
+}
+.Boxes .PostBox {
+  width: 23%;
+  background-color: #d6d3c9;
+  padding: 3em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.Boxes .CatgoryBox {
+  width: 23%;
+  background-color: #d6c9ba;
+  padding: 3em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.Boxes h1 {
+  color: black;
+  text-align: center;
+}

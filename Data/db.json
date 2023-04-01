@@ -1,0 +1,171 @@
+{
+  "users": [
+    {
+      "email": "menna@gmail.com",
+      "password": "$2a$10$GqNH/1tTvo4IDkvwFT2js.KY6bJ/fVlpvsmIJRhnbuWD.y1TtSgmG",
+      "name": "menna",
+      "confirm password": "145",
+      "id": 1
+    },
+    {
+      "email": "menna1@gmail.com",
+      "password": "$2a$10$him1XBJYq0mAWvCKMQ5kHO7MNwwTEc2qsMK0CXECB7rkQuOec6eKS",
+      "name": "menna",
+      "confirm password": "145h",
+      "id": 2
+    },
+    {
+      "email": "menna4@gmail.com",
+      "password": "$2a$10$7U24BnG/H7MVju653gZFI.2VeV6E1iJAv4P.Sb0psMfKxElTa8WbO",
+      "name": "mennaaaaa",
+      "confirm password": "145haaaaa",
+      "id": 3
+    },
+    {
+      "email": "menna5@gmail.com",
+      "password": "$2a$10$PYPPqCZE1.Bg2zgtQSd6kew.AkiHqAP2Dqi98D41YVUy/TrZWh/VW",
+      "Title": "superman",
+      "discription": "superman is lucky",
+      "id": 4
+    },
+    {
+      "name": "mennaaaaa",
+      "email": "menna4@gmail.com",
+      "password": "145haaaaa",
+      "confirm password": "145haaaaa",
+      "id": 5
+    },
+    {
+      "name": "mennaaaaa",
+      "email": "menna4@gmail.com",
+      "password": "145haaaaa",
+      "confirm password": "145haaaaa",
+      "id": 6
+    },
+    {
+      "email": "mennat2@gmail.com",
+      "password": "$2a$10$7.KNiuxwXGym4DeICOhSTuk71dbbtjRA4i8KOJn69AEvl/.bFokqa",
+      "id": 7
+    },
+    {
+      "email": "mennaa@gmail.com",
+      "password": "$2a$10$90OyzsEO.oD2odaWJBcZmOQsfRVtduxCtuRGoGtdvrAWH9T.Nc89.",
+      "id": 8
+    },
+    {
+      "email": "Mai@gmail.com",
+      "password": "$2a$10$beSXEERnIa6MVvAw3/TIvecsOvrMYgOPrReY8b26rzPSq5wUwhMim",
+      "id": 9
+    },
+    {
+      "email": "mai4@gmail.com",
+      "password": "$2a$10$cWGOT9vGzi4y3/2ysS3S2egG3fIdjXJVG3TXth1Y24v/APkOa78HS",
+      "id": 10
+    },
+    {
+      "email": "manosh@gmail.com",
+      "password": "$2a$10$HSJ6ZGXBPGi2qJQonIipyOGLYL8XLdjY5YLEYPCKryoqhvhIrUIBy",
+      "id": 11
+    }
+  ],
+  "posts": [
+    {
+      "title": "Adobe Summit 2023: Adobe Experience Cloud goes next level",
+      "discription": "Today we kicked off Summit 2023, the world’s largest digital experience conference, unveiling innovations and breakthrough advances in Adobe Experience Cloud that empower our customers to harness experience-led growth to differentiate their brand, build trust and drive profitability. make the digital economy personal, with powerful digital experiences that can be personalized. This year marks Summit’s first return to Las Vegas since 2019, in a hybrid in-person and virtual format powered by Adobe Experience Cloud.",
+      "photo": "https://selena.pixandhue.com/wp-content/uploads/2022/02/haute-stock-photography-blog1.png",
+      "category": 1,
+      "UserId": 1,
+      "id": 1
+    },
+    {
+      "title": "Responsible innovation in the age of generative AI",
+      "discription": "Generative AI is changing the way we all think about creativity. Type “3D render of a paper dragon, studio style photography” and you’re instantly offered multiple variations of a portrait of a ferocious origami creature — or combine a few data points with simple instruction and a chatbot can spit out a compelling marketing email. It’s easy to see the power this technology can unlock for individual creators and businesses alike. Generative AI lets people paint with text instead of pixels (or paint). On the business side, it lets you connect with customers efficiently through auto-generated texts, emails, and content. And implemented the right way, generative AI brings precision, power, speed, and ease to your existing workflows — allowing people to focus on more strategic or creative parts of their work.",
+      "photo": "https://selena.pixandhue.com/wp-content/uploads/2022/02/haute-stock-photography-blog3.png",
+      "category": 2,
+      "UserId": 1,
+      "id": 2
+    },
+    {
+      "title": "Blog 3",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://selena.pixandhue.com/wp-content/uploads/2022/03/haute-stock-photography-8.jpg",
+      "category": 1,
+      "UserId": 1,
+      "id": 3
+    },
+    {
+      "title": "Meet AutoManage, the best AI management tools",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://i.pinimg.com/originals/d9/61/eb/d961eb0a3b0090a67a13dc974ce0ee6d.jpg",
+      "category": 2,
+      "UserId": 1,
+      "id": 4
+    },
+    {
+      "title": "Blog 5",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://pbs.twimg.com/media/DSZLiTPXkAc6L_p.jpg",
+      "UserId": 1,
+      "category": 1,
+      "id": 5
+    },
+    {
+      "title": "Blog 6",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://i.pinimg.com/originals/5c/00/88/5c00884764ceb3cfe3f7b14ce56d881a.jpg",
+      "UserId": 1,
+      "category": 2,
+      "id": 6
+    },
+    {
+      "title": "Blog 7",
+      "discription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://i.pinimg.com/originals/5c/00/88/5c00884764ceb3cfe3f7b14ce56d881a.jpg",
+      "UserId": 1,
+      "category": 3,
+      "id": 7
+    },
+    {
+      "title": "hello edit",
+      "discription": "hi",
+      "photo": "blob:http://localhost:5173/0b5c071c-7bc5-4766-bdd4-c278ee90a956",
+      "category": 4,
+      "UserId": 3,
+      "id": 8
+    },
+    {
+      "title": "helloedit",
+      "discription": "ayhaga",
+      "photo": "blob:http://localhost:5173/b73eefe9-0cf0-4dae-9a56-64b1a0de4d91",
+      "category": 1,
+      "UserId": 3,
+      "id": 10
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "All Blogs"
+    },
+    {
+      "id": 1,
+      "name": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Education"
+    },
+    {
+      "id": 3,
+      "name": "Fashion"
+    },
+    {
+      "id": 4,
+      "name": "Health"
+    },
+    {
+      "id": 5,
+      "name": "Technology"
+    }
+  ]
+}

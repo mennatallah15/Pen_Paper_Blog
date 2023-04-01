@@ -1,0 +1,14 @@
+.MainBreak {
+  background-color: #d6d3c9;
+  height: 20rem;
+  position: relative;
+  bottom: 5rem;
+}
+.breakContent {
+  margin: 0 auto !important;
+}
+.MainBreak p,
+.MainBreak h2 {
+  color: rgba(0, 0, 0, 0.678);
+  text-align: center;
+}

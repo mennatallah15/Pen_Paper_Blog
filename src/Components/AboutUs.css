@@ -1,0 +1,62 @@
+.mainAbout {
+  width: 100%;
+  background-color: #f9f5f0 !important;
+  position: relative;
+  top: -5rem;
+  height: 70vw;
+}
+
+.containAbout {
+  margin-top: 10rem;
+  width: 70vw;
+  color: black;
+}
+.containAbout .AboutTitle h1 {
+  font-size: 48px;
+  line-height: 1.3em;
+  font-family: "fraunces", serif;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #111;
+  padding-right: 10vw;
+}
+.mainAbout .Aboutphoto {
+  /* width: 30%; */
+  position: relative;
+  right: 0;
+  margin-top: 3.5rem;
+  /* left: 0px; */
+  /* top: 15px; */
+  /* z-index: 1; */
+  background-size: cover;
+}
+.Aboutphoto img {
+  /* max-width: 100%; */
+  width: auto;
+  height: 60vw;
+}
+
+.mainAbout .AboutImage {
+  /* width: 28rem; */
+  /* position: relative; */
+  /* right: 0; */
+  position: absolute;
+  margin-top: 4.1rem;
+  /* margin-left: 32rem; */
+  left: 50%;
+  /* transform: scale(20%, 50%); */
+  /* right: 100%; */
+  /* left: 41rem; */
+  /* bottom: -5em; */
+  /* z-index: 2; */
+}
+.AboutImage img {
+  position: relative;
+  /* max-width: 100%; */
+  width: auto;
+  /* width: auto; */
+  height: 50vw;
+  object-fit: cover;
+  /* overflow: hidden; */
+}

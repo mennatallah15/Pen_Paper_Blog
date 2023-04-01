@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #f9f5f0;
+  color: #805541;
+  height: 10vw;
+}
+.navbar .navbar-end .btn {
+  background-color: #805541;
+  color: white;
+  border: 2px solid;
+  /* border-radius: 12px; */
+  margin-right: 1em;
+  /* padding: 1em; */
+}
+.navbar .navbar-end .btn:hover {
+  background-color: white;
+  color: #805541;
+}
