@@ -124,22 +124,6 @@
       "UserId": 1,
       "category": 3,
       "id": 7
-    },
-    {
-      "title": "hello edit",
-      "discription": "hi",
-      "photo": "blob:http://localhost:5173/0b5c071c-7bc5-4766-bdd4-c278ee90a956",
-      "category": 4,
-      "UserId": 3,
-      "id": 8
-    },
-    {
-      "title": "helloedit",
-      "discription": "ayhaga",
-      "photo": "blob:http://localhost:5173/b73eefe9-0cf0-4dae-9a56-64b1a0de4d91",
-      "category": 1,
-      "UserId": 3,
-      "id": 10
     }
   ],
   "categories": [

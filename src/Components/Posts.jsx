@@ -58,8 +58,8 @@ export default function Posts({
   };
 
   return (
-    <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-      <div className="MainPosts mx-auto mb-20 max-w-[370px]">
+    <div className="w-full px-8 md:w-1/2 lg:w-1/3 mx-auto">
+      <div className="MainPosts w-[30vw] mx-auto mb-20">
         <div className="mb-5 overflow-hidden rounded relative">
           <img className="PostImg" src={postPhoto} alt="image" />
         </div>
@@ -139,6 +139,11 @@ export default function Posts({
           <div>
             <p className="text-body-color text-base truncate">{postDes}</p>
           </div>
+          <Link to={`/Blog/${PostId}`}>
+            <button className="text-xl hover:text-primary font-semibold mt-2">
+              Read More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

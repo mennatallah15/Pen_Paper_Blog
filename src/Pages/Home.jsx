@@ -79,9 +79,9 @@ export default function Home({
           {FilteredPosts?.length > 0 ? (
             <section id="Posts" className="pt-20 pb-10 lg:pb-20">
               <div className="container mx-auto">
-                <div className="flex flex-wrap justify-center">
+                <div className="container mx-auto flex flex-wrap justify-center items-center">
                   <div className="w-full px-4">
-                    <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
+                    <div className="mx-auto mb-[60px] text-center lg:mb-20">
                       <h2
                         id="BlogMainTitle"
                         className="text-3xl font-bold sm:text-4xl md:text-[40px]"

@@ -11,7 +11,6 @@ import axios from "axios";
 import SignUp from "./Pages/SignUp";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Footer2 from "./Components/Footer2";
 import BlogDetails from "./Pages/BlogDetails";
 
 const pageSize = 6;
@@ -129,7 +128,6 @@ function App() {
           <Route path="/Blog/:postid" element={<BlogDetails posts={Posts} />} />
         </Routes>
         <Footer />
-        {/* <Footer2 /> */}
       </BrowserRouter>
     </div>
   );
