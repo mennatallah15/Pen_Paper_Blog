@@ -38,18 +38,10 @@
 }
 
 .mainAbout .AboutImage {
-  /* width: 28rem; */
-  /* position: relative; */
-  /* right: 0; */
   position: absolute;
   margin-top: 4.1rem;
   /* margin-left: 32rem; */
   left: 50%;
-  /* transform: scale(20%, 50%); */
-  /* right: 100%; */
-  /* left: 41rem; */
-  /* bottom: -5em; */
-  /* z-index: 2; */
 }
 .AboutImage img {
   position: relative;
