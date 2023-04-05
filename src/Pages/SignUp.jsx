@@ -62,7 +62,10 @@ const SignUp = () => {
       <div className="register flex container mx-auto justify-center">
         <div className="Form mt-2">
           <h1>Sign Up</h1>
-          <form className="mt-8" onSubmit={handleSubmit(onSubmit)}>
+          <form
+            className="mt-8 container mx-auto justify-center"
+            onSubmit={handleSubmit(onSubmit)}
+          >
             <input
               type="text"
               className="input w-full max-w-xs mb-2"
@@ -117,7 +120,10 @@ const SignUp = () => {
             </button>
             <h2> {error && <div className="error">{error}</div>}</h2>
             <span>
-              Already have an account? <Link to="/login">Login</Link>
+              Already have an account?{" "}
+              <Link to="/login" className="SmallLink">
+                Login
+              </Link>
             </span>
           </form>
         </div>

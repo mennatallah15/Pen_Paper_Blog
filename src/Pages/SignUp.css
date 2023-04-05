@@ -10,9 +10,9 @@
 
 .register .registerPhoto img {
   max-width: 100%;
-  height: 40vw;
+  height: 25rem;
   /* margin: 0 auto; */
-  margin-top: 2em;
+  margin-top: 4em;
   object-fit: cover;
   border-radius: 20% 0 20% 0;
 }
@@ -26,12 +26,12 @@
   margin-right: 10rem;
 }
 .register .Form {
-  width: 40vw;
+  width: 30vw;
 
   /* margin: 0 auto; */
 }
 .register .registerPhoto {
-  width: 40%;
+  width: 30%;
 }
 .register .Form input,
 .register .Form button {
@@ -39,8 +39,6 @@
   background-color: #f9f5f0;
   color: black;
   margin-bottom: 1rem;
-  /* border: 1px solid rgba(0, 0, 0, 0.51); */
-  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
 }
 .register .Form button {
@@ -59,8 +57,19 @@
   display: block;
   color: black;
 }
+.SmallLink {
+  color: sienna;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
 
-/* .register .registerForm h2::before {
-  display: inline;
-  content: "⚠ ";
-} */
+@media (max-width: 850px) {
+  .registerPhoto {
+    display: none;
+  }
+  .register .Form input,
+  .register .Form button {
+    width: 60vw !important;
+  }
+}

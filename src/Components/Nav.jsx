@@ -42,12 +42,12 @@ export default function Nav() {
                   <li>
                     <Link to="/">Home</Link>
                   </li>
-                  <li>
-                    <Link to="/signup">Register</Link>
-                  </li>
-                  <li>
-                    <Link to="/login">Login</Link>
-                  </li>
+                  <Link to="/signup">
+                    <li>Register</li>
+                  </Link>
+                  <Link to="/login">
+                    <li>Login</li>
+                  </Link>
                 </ul>
               </div>
               <a className="btn btn-ghost normal-case text-xl lg:inline md:hidden sm:hidden Logo">
@@ -68,12 +68,12 @@ export default function Nav() {
             <div className="navbar-end">
               {!user && (
                 <div>
-                  <a className="btn flex float-right">
-                    <Link to="/signup">Register</Link>
-                  </a>
-                  <a className="btn flex float-right">
-                    <Link to="/login">Login</Link>
-                  </a>
+                  <Link to="/signup">
+                    <a className="btn flex float-right">Register</a>
+                  </Link>
+                  <Link to="/login">
+                    <a className="btn flex float-right">Login</a>
+                  </Link>
                 </div>
               )}
               {user && (

@@ -74,7 +74,10 @@ const Login = () => {
             </button>
             <h2>{error && <div className="error">{error}</div>}</h2>
             <span>
-              You Don't have an account yet?<Link to="/signup">Sign up</Link>
+              You Don't have an account yet?
+              <Link to="/signup" className="SmallLink">
+                Sign up
+              </Link>
             </span>
           </form>
         </div>
