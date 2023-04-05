@@ -1,6 +1,6 @@
-.ContainPosts {
+/* .ContainPosts {
   width: 30% !important;
-}
+} */
 .MainPosts {
   color: #805541;
 }
@@ -9,7 +9,7 @@
   height: 30vw;
   object-position: center;
 }
-
+/* 
 .card-Des {
   font-size: 1rem;
 }
@@ -17,4 +17,4 @@
   width: 40%;
   text-overflow: ellipsis;
   overflow: hidden;
-}
+} */

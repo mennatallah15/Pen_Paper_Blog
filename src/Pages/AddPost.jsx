@@ -7,6 +7,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useAuthContext } from "../hooks/useAuthContext";
+import { Link } from "react-router-dom";
 
 const schema = yup
   .object({
@@ -18,21 +19,6 @@ const schema = yup
 
 function AddPost(props) {
   const { user } = useAuthContext();
-  // const options = [
-  //   { value: "", text: "--Choose Category--" },
-  //   { value: "1", text: "Food 🍏" },
-  //   { value: "2", text: "Education 👨‍🏫" },
-  //   { value: "3", text: "Fashion 🧚‍♀️" },
-  //   { value: "4", text: "Health 👩‍⚕️" },
-  //   { value: "5", text: "Technology 🤳" },
-  // ];
-
-  // const [selected, setSelected] = useState(options[0].value);
-
-  // const handleChange = (event) => {
-  //   console.log(event.target.value);
-  //   setSelected(event.target.value);
-  // };
 
   const navigate = useNavigate();
 
@@ -51,16 +37,13 @@ function AddPost(props) {
   const LastVal = watch("Description");
   const CatVal = watch("Category");
 
-  // console.log("userId", local);
-  // const AgeVal = watch("age");
-  // console.log(PhotoVal);
   const onSubmit = async (data) => {
     let UserId = user.user.id;
-    console.log(UserId);
-    console.log(data);
-    console.log(data.ImageFile[0].name);
-    console.log(data.Title);
-    console.log(data.Category);
+    // console.log(UserId);
+    // console.log(data);
+    // console.log(data.ImageFile[0].name);
+    // console.log(data.Title);
+    // console.log(data.Category);
     // const ImageSrc = data.ImageFile[0].name;
 
     const AddData = async () => {
@@ -73,17 +56,13 @@ function AddPost(props) {
           UserId: +UserId,
         })
         .then((response) => {
-          console.log(response);
-          console.log("data helloooo", response.data);
-          console.log(data.Title);
-          // console.log(dataToAdd);
-          // update app state
+          // console.log("data: ", response.data);
+          // console.log(data.Title);
           props.AddPosts(response.data);
         })
         .catch((error) => console.log(error));
     };
     await AddData();
-    // console.log(dataToAdd);
     navigate("/");
   };
 
@@ -118,11 +97,6 @@ function AddPost(props) {
                   <option value="3">Fashion 🧚‍♀️</option>
                   <option value="4">Health 👩‍⚕️</option>
                   <option value="5">Technology 🤳</option>
-                  {/* {options.map((option) => (
-                  <option key={option.value} value={option.value}>
-                    {option.text}
-                  </option>
-                ))} */}
                 </select>
 
                 {errors.Category && (
@@ -141,17 +115,6 @@ function AddPost(props) {
                   // value={Image || ""}
                 />
                 <h2> {errors.ImageFile?.message}</h2>
-
-                {/* <input
-                {...register("ImageFile", { required: true })}
-                onChange={(e) => {
-                  console.log(e.target.files[0]);
-                  setImage(e.target.files[0]);
-                }}
-                className="w-full max-w-xs mb-5 block text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
-                id="file_input"
-                type="file"
-              /> */}
 
                 <button className="btn w-full max-w-xs">Add Post</button>
               </form>
@@ -198,26 +161,6 @@ function AddPost(props) {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="MainPosts card card-compact w-80 shadow-xl">
-                    <figure>
-                      {Image ? (
-                        <img
-                          className="PostImg "
-                          src={URL.createObjectURL(Image)}
-                          alt="Posts"
-                        />
-                      ) : (
-                        ""
-                      )}
-                    </figure>
-                    <div className="card-body">
-                      <h2 className="card-title Addpost">{TitleVal}</h2>
-                      <p>{LastVal}</p>
-                      <div className="card-actions justify-start">
-                        <button className="btn btn-primary">Read More</button>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </div>
             </div>
@@ -226,9 +169,31 @@ function AddPost(props) {
       )}
       {!user && (
         <>
-          <h1 className="text-center">
+          {/* The button to open modal */}
+          <label htmlFor="my-modal-6" className="btn">
+            open modal
+          </label>
+
+          {/* Put this part before </body> tag */}
+          <input type="checkbox" id="my-modal-6" className="modal-toggle" />
+          <div className="modal modal-bottom sm:modal-middle">
+            <div className="modal-box">
+              <h3 className="font-bold text-lg">
+                You Must Login first to Add Your Own Post
+              </h3>
+              <p className="py-4">You Must Login first to Add Your Own Post</p>
+              <div className="modal-action">
+                <Link to="/login">
+                  <label htmlFor="my-modal-6" className="btn">
+                    Login
+                  </label>
+                </Link>
+              </div>
+            </div>
+          </div>
+          {/* <h1 className="text-center">
             You Must Login first to Add Your Own Post
-          </h1>
+          </h1> */}
         </>
       )}
     </>

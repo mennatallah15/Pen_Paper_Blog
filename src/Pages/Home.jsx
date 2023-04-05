@@ -9,7 +9,7 @@ import "./Home.css";
 import AboutUs from "../Components/AboutUs";
 import Break from "../Components/Break";
 import BlogDetails from "./BlogDetails";
-// import "../Components/posts.css";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 export default function Home({
   CurrentCategory,
@@ -22,6 +22,8 @@ export default function Home({
   changeCurrentPage,
   handelDeletePosts,
 }) {
+  const { user } = useAuthContext();
+
   /////////filter///////
   let FilteredPosts = useMemo(() => {
     console.log("Memo run!!!");
@@ -70,11 +72,47 @@ export default function Home({
             </div>
           </div>
           <div>
-            <Link to="/addPost">
-              <button className="AddBtn mb-8 mr-5 bottom-0 right-0 fixed w-10">
-                <img src="src/assets/Images/plus (1).png" alt="Addbutton" />
-              </button>
-            </Link>
+            {user && (
+              <Link to="/addPost">
+                <button className="AddBtn mb-8 mr-5 bottom-0 right-0 fixed w-10">
+                  <img src="src/assets/Images/plus (1).png" alt="Addbutton" />
+                </button>
+              </Link>
+            )}
+            {!user && (
+              <>
+                {/* The button to open modal */}
+                <label
+                  htmlFor="my-modal-6"
+                  className="AddBtn mb-8 mr-5 bottom-0 right-0 fixed w-10 cursor-pointer"
+                >
+                  <img src="src/assets/Images/plus (1).png" alt="Addbutton" />
+                </label>
+                {/* Put this part before </body> tag */}
+                <input
+                  type="checkbox"
+                  id="my-modal-6"
+                  className="modal-toggle"
+                />
+                <div className="modal modal-bottom sm:modal-middle">
+                  <div className="modal-box">
+                    <h3 className="font-bold text-lg">
+                      You Must Login first to Add Your Own Post
+                    </h3>
+                    <div className="modal-action">
+                      <Link to="/login">
+                        <label htmlFor="my-modal-6" className="btn">
+                          Login
+                        </label>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                {/* <h1 className="text-center">
+            You Must Login first to Add Your Own Post
+          </h1> */}
+              </>
+            )}
           </div>
           {FilteredPosts?.length > 0 ? (
             <section id="Posts" className="pt-20 pb-10 lg:pb-20">
