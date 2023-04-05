@@ -59,7 +59,7 @@ export default function Posts({
 
   return (
     <div className="w-full px-8 md:w-1/2 lg:w-1/3 mx-auto">
-      <div className="MainPosts w-[30vw] mx-auto mb-20">
+      <div className="MainPosts mx-auto mb-20">
         <div className="mb-5 overflow-hidden rounded relative">
           <img className="PostImg" src={postPhoto} alt="image" />
         </div>

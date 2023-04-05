@@ -11,19 +11,35 @@
 .ContainFooter {
   background-color: #f9f5f0 !important;
 }
+.FooterImages {
+  /* width: 80%; */
+  grid-template-columns: repeat(auto-fit, minmax(100px, max-content));
+  justify-content: center;
+  align-items: center;
+}
+
+.FooterImages img {
+  height: 17vw;
+}
 
 .FooterLogo {
-  width: 23%;
+  width: 14vw;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
   /* bottom: 3rem; */
 }
 
-#FooterLinksLeft h1 {
+/* #FooterLinksLeft h1 {
   position: relative;
   left: 10rem;
-}
-#FooterLinksRight h1 {
+} */
+/* #FooterLinksRight h1 {
   position: relative;
   right: 10rem;
+} */
+
+@media (max-width: 800px) {
+  .FooterImages img {
+    height: 23vw;
+  }
 }

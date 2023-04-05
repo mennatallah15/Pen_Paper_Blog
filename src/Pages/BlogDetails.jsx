@@ -30,7 +30,7 @@ export default function BlogDetails() {
   return (
     <section className="relative pt-12 bg-blueGray-50">
       <div className="items-center flex flex-wrap">
-        <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+        <div className="w-full md:w-4/12 ml-auto mr-auto px-4 mb-12">
           <img
             alt="..."
             className="max-w-full rounded-lg shadow-lg"
