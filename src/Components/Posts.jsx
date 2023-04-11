@@ -58,11 +58,10 @@ export default function Posts({
   };
 
   return (
-    <div className="w-full px-8 md:w-1/2 lg:w-1/3 mx-auto">
-      <div className="MainPosts mx-auto mb-20">
-        <div className="mb-5 overflow-hidden rounded relative">
-          <img className="PostImg" src={postPhoto} alt="image" />
-        </div>
+    <div className="sm:w-full px-8 md:w-1/2 lg:w-1/3">
+      <div className="MainPosts mb-20">
+        <img className="PostImg w-full mb-5" src={postPhoto} alt="image" />
+
         <div>
           <div className="flex justify-between">
             <span className="bg-primary mb-3 inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
@@ -136,8 +135,10 @@ export default function Posts({
               </a>
             </h3>
           </Link>
-          <div>
-            <p className="text-body-color text-base truncate">{postDes}</p>
+          <div className="block w-[20rem]">
+            <p className="text-body-color text-base truncate block">
+              {postDes}
+            </p>
           </div>
           <Link to={`/Blog/${PostId}`}>
             <button className="text-xl hover:text-primary font-semibold mt-2">

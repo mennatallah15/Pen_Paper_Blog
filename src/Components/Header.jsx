@@ -9,12 +9,12 @@ export default function Header() {
             alt=""
           />
         </div>
-        <div className="contain">
-          <div className="containTitle max-w-lg w-full">
-            <h1 className="LargeParagraph sm:mb-7 lg:text-4xl ml-20 sm:text-3xl pr-20 lg:block md:hidden sm:hidden">
+        <div className="containText">
+          <div className="containTitle max-w-lg w-full lg:block md:block sm:hidden">
+            <h1 className="LargeParagraph sm:mb-7 lg:text-4xl ml-20 md:text-3xl sm:text-3xl">
               LOREM LES IPSTA UMES DOLORE
             </h1>
-            <p className="SmallParagraph lg:text-3xl ml-20 pr-5 md:text-2xl lg:block md:hidden sm:hidden">
+            <p className="SmallParagraph lg:text-3xl ml-20 md:text-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut
               eaque corrupti vitae laborum et fugiat libero ipsam eum?
               Architecto similique
