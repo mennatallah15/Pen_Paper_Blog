@@ -16,42 +16,49 @@
   object-fit: cover;
   border-radius: 20% 0 20% 0;
 }
-.register .Form h1 {
+.MainForm {
+  width: 22rem;
+  /* margin-right: 5rem; */
+}
+.register h1 {
   color: sienna;
   text-align: center;
   font-weight: 500;
   font-size: 2rem;
-  margin-right: 2em;
+  /* margin-right: 2em; */
   position: relative;
-  margin-right: 10rem;
+  /* margin-right: 10rem; */
 }
-.register .Form {
-  width: 30vw;
+/* .register .MainForm .Form {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  /* margin: 0 auto; */
-}
+  margin: 0 auto;
+} */
 .register .registerPhoto {
-  width: 30%;
+  width: 40rem;
 }
-.register .Form input,
-.register .Form button {
+.register .MainForm .Form input,
+.register .MainForm .Form button {
   width: 25vw !important;
   background-color: #f9f5f0;
   color: black;
   margin-bottom: 1rem;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 15px 0 rgba(0, 0, 0, 0.19);
 }
-.register .Form button {
+.register .MainForm .Form button {
   border: none;
   background-color: sienna;
   color: #f9f5f0;
 }
-.register .Form h2 {
+.register .MainForm .Form h2 {
   color: #750421;
   font-size: 0.8rem;
   margin-bottom: 1em;
   display: inline;
-  content: "⚠ ";
+  /* content: "⚠ "; */
 }
 .Form span {
   display: block;
@@ -68,8 +75,8 @@
   .registerPhoto {
     display: none;
   }
-  .register .Form input,
-  .register .Form button {
+  .register .MainForm .Form input,
+  .register .MainForm .Form button {
     width: 60vw !important;
   }
 }

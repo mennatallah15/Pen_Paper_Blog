@@ -12,27 +12,28 @@
 }
 .Category .CategoryImg {
   width: 100%;
-  margin-bottom: 10em;
-  height: 15vw;
+  margin-bottom: 5em;
+  margin-top: 5em;
+  height: 15rem;
   /* text-align: center; */
 }
 .Category .CategoryImg img {
   cursor: pointer;
-  height: 25vw;
+  height: 24rem;
   width: 80%;
   /* object-fit: fill; */
   object-fit: cover;
   border-radius: 25% 0 25% 0;
 }
 .Category .CategoryName {
-  width: 15vw;
+  width: 15rem;
   background-color: rgba(0, 0, 0, 0.542);
   border-radius: 50% 0 50% 0;
   position: absolute;
   padding: 0.6em 1.5em;
   /* left: 50%; */
   top: 50%;
-  left: 40%;
+  left: 50%;
   z-index: 1;
   text-align: center;
   /* bottom: 0; */

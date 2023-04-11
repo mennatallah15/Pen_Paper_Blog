@@ -2,12 +2,10 @@
   background-color: #f9f5f0;
   position: relative;
   bottom: 5rem;
-  height: 75rem;
+  /* height: 75rem; */
 }
 .Categories h1 {
   color: #805541;
-  font-size: 2rem;
-  font-weight: 400;
   /* margin: 0 auto; */
   position: relative;
   top: 1.5em;

@@ -44,44 +44,51 @@ const Login = () => {
 
   return (
     <div className="Container-Form">
-      <div className="register flex container mx-auto justify-center">
-        <div className="Form mt-6">
-          <h1>Login</h1>
-          <form className="mt-8" onSubmit={handleSubmit(onSubmit)}>
-            <input
-              className="input w-full max-w-xs mb-2"
-              placeholder="Email"
-              {...register("Email", { required: true, maxLength: 20 })}
-              onChange={(e) => setEmail(e.target.value)}
-              value={email}
-            />
-            <h2>{errors.Email && <p>Email is required.</p>}</h2>
+      <div className="register flex container mx-auto justify-center items-center">
+        <div className="MainForm mt-8">
+          <div>
+            <h1>Login</h1>
+          </div>
+          <div className="Form">
+            <form
+              className="mt-8 container mx-auto"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <input
+                className="input w-full max-w-xs mb-2"
+                placeholder="Email"
+                {...register("Email", { required: true, maxLength: 20 })}
+                onChange={(e) => setEmail(e.target.value)}
+                value={email}
+              />
+              <h2>{errors.Email && <p>Email is required.</p>}</h2>
 
-            <input
-              className="input w-full max-w-xs mb-2"
-              placeholder="Password"
-              {...register("Password", {
-                required: true,
-              })}
-              type="password"
-              onChange={(e) => setPassword(e.target.value)}
-              value={password}
-            />
-            <h2>{errors.Password && <p>Password is required.</p>}</h2>
+              <input
+                className="input w-full max-w-xs mb-2"
+                placeholder="Password"
+                {...register("Password", {
+                  required: true,
+                })}
+                type="password"
+                onChange={(e) => setPassword(e.target.value)}
+                value={password}
+              />
+              <h2>{errors.Password && <p>Password is required.</p>}</h2>
 
-            <button className="btn w-full max-w-xs" disabled={isLoading}>
-              Login
-            </button>
-            <h2>{error && <div className="error">{error}</div>}</h2>
-            <span>
-              You Don't have an account yet?
-              <Link to="/signup" className="SmallLink">
-                Sign up
-              </Link>
-            </span>
-          </form>
+              <button className="btn w-full max-w-xs" disabled={isLoading}>
+                Login
+              </button>
+              <h2>{error && <div className="error">{error}</div>}</h2>
+              <span>
+                You Don't have an account yet?
+                <Link to="/signup" className="SmallLink">
+                  Sign up
+                </Link>
+              </span>
+            </form>
+          </div>
         </div>
-        <div className="LoginPhoto">
+        <div className="LoginPhoto xl:flex lg:flex justify-center items-center sm:none">
           <img src="https://kartinkin.net/uploads/posts/2022-02/1645897265_73-kartinkin-net-p-kartinki-volshebstvo-78.jpg" />
           {/* <img src="https://pbs.twimg.com/media/DSZLiTPXkAc6L_p.jpg" alt="" /> */}
           {/* <img

@@ -59,75 +59,79 @@ const SignUp = () => {
 
   return (
     <div className="Container-Form">
-      <div className="register flex container mx-auto justify-center">
-        <div className="Form mt-2">
-          <h1>Sign Up</h1>
-          <form
-            className="mt-8 container mx-auto justify-center"
-            onSubmit={handleSubmit(onSubmit)}
-          >
-            <input
-              type="text"
-              className="input w-full max-w-xs mb-2"
-              placeholder="FullName"
-              {...register("FullName")}
-            />
-            <h2>{errors.FullName && <p>You must enter full name</p>}</h2>
+      <div className="register flex container mx-auto justify-center items-center">
+        <div className="MainForm mt-8">
+          <div>
+            <h1>Sign Up</h1>
+          </div>
+          <div className="Form">
+            <form
+              className="mt-8 container mx-auto"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <input
+                type="text"
+                className="input w-full max-w-xs mb-2"
+                placeholder="FullName"
+                {...register("FullName")}
+              />
+              <h2>{errors.FullName && <p>You must enter full name</p>}</h2>
 
-            <input
-              type="number"
-              className="input w-full max-w-xs mb-2"
-              placeholder="Age"
-              {...register("Age")}
-            />
-            {/* <h2>{errors.Age && <p>Age is required.</p>}</h2> */}
-            <h2>{errors.Age?.message && <p>Age is required.</p>}</h2>
+              <input
+                type="number"
+                className="input w-full max-w-xs mb-2"
+                placeholder="Age"
+                {...register("Age")}
+              />
+              {/* <h2>{errors.Age && <p>Age is required.</p>}</h2> */}
+              <h2>{errors.Age?.message && <p>Age is required.</p>}</h2>
 
-            <input
-              type="email"
-              className="input w-full max-w-xs mb-2"
-              placeholder="Email"
-              value={email}
-              {...register("Email")}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <h2>{errors.Email && <p>Email is required.</p>}</h2>
+              <input
+                type="email"
+                className="input w-full max-w-xs mb-2"
+                placeholder="Email"
+                value={email}
+                {...register("Email")}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <h2>{errors.Email && <p>Email is required.</p>}</h2>
 
-            <input
-              type="password"
-              className="input w-full max-w-xs mb-2"
-              placeholder="Password"
-              value={password}
-              {...register("Password")}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <h2>{errors.Password && <p>Password is required.</p>}</h2>
+              <input
+                type="password"
+                className="input w-full max-w-xs mb-2"
+                placeholder="Password"
+                value={password}
+                {...register("Password")}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <h2>{errors.Password && <p>Password is required.</p>}</h2>
 
-            <input
-              type="password"
-              className="input w-full max-w-xs mb-2"
-              placeholder="Confirm Password"
-              value={ConfirmPassword}
-              {...register("ConfirmPassword")}
-              onChange={(e) => setConfirmPassword(e.target.value)}
-            />
-            <h2>
-              {errors.ConfirmPassword && <p>Confirm Password is required.</p>}
-            </h2>
+              <input
+                type="password"
+                className="input w-full max-w-xs mb-2"
+                placeholder="Confirm Password"
+                value={ConfirmPassword}
+                {...register("ConfirmPassword")}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+              <h2>
+                {errors.ConfirmPassword && <p>Confirm Password is required.</p>}
+              </h2>
 
-            <button className="btn w-full max-w-xs" disabled={isLoading}>
-              Sign Up
-            </button>
-            <h2> {error && <div className="error">{error}</div>}</h2>
-            <span>
-              Already have an account?{" "}
-              <Link to="/login" className="SmallLink">
-                Login
-              </Link>
-            </span>
-          </form>
+              <button className="btn w-full max-w-xs" disabled={isLoading}>
+                Sign Up
+              </button>
+              <h2> {error && <div className="error">{error}</div>}</h2>
+              <span>
+                Already have an account?{" "}
+                <Link to="/login" className="SmallLink">
+                  Login
+                </Link>
+              </span>
+            </form>
+          </div>
         </div>
-        <div className="registerPhoto">
+        <div className="registerPhoto xl:flex lg:flex justify-center items-center sm:none">
           <img src="src/assets/Images/Photo2.jpg" />
         </div>
       </div>

@@ -51,9 +51,11 @@ export default function Home({
         <Break />
         <div>
           <div id="category" className="Categories">
-            <h1 className="container mx-auto">Categories</h1>
+            <h1 className="container mx-auto text-3xl font-bold sm:text-4xl md:text-[40px]">
+              Categories
+            </h1>
             <div className="container mx-auto">
-              <div className="flex flex-wrap mb-12 mt-20 justify-center align-middle">
+              <div className="flex flex-wrap mb-12 mt-20 justify-center items-center">
                 {Categories.map((category) => {
                   // {
                   //   console.log(category.id);
@@ -108,9 +110,6 @@ export default function Home({
                     </div>
                   </div>
                 </div>
-                {/* <h1 className="text-center">
-            You Must Login first to Add Your Own Post
-          </h1> */}
               </>
             )}
           </div>
@@ -129,7 +128,7 @@ export default function Home({
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-wrap">
+                <div className="container mx-auto flex flex-wrap justify-between">
                   {FilteredPosts?.map((post) => {
                     // {
                     //   console.log(post?.id);

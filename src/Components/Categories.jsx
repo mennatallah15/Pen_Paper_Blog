@@ -4,8 +4,8 @@ export default function CategoriesComponent({
   changeCurrentCategory,
 }) {
   return (
-    <div className="Category">
-      <div className="CategoryImg">
+    <div className="Category lg:w-1/3 md:w-1/2 sm:w-full min-[100px]:w-full">
+      <div className="CategoryImg flex justify-center items-center align-middle">
         <img
           key={category.id}
           src={
