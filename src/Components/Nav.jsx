@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
-import Home from "../Pages/Home";
 import "./Nav.css";
 import { useAuthContext } from "../hooks/useAuthContext";
 
@@ -15,7 +14,7 @@ export default function Nav() {
   return (
     <>
       <div>
-        <div className="navbar">
+        <div className="navbar py-16">
           <div className="container mx-auto">
             <div className="navbar-start">
               <div className="dropdown">
@@ -37,20 +36,37 @@ export default function Nav() {
                 </label>
                 <ul
                   tabIndex={0}
-                  className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+                  className="menu menu-compact dropdown-content mt-3 shadow bg-[#f9f5f0] rounded-box w-52 p-5"
                 >
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
+                  <Link to="/">
+                    <li className="hover:text-[#f9f5f0] hover:bg-[#805541] rounded p-2">
+                      Home
+                    </li>
+                  </Link>
                   <Link to="/signup">
-                    <li>Register</li>
+                    <li className="hover:text-[#f9f5f0] hover:bg-[#805541] rounded p-2">
+                      Register
+                    </li>
                   </Link>
                   <Link to="/login">
-                    <li>Login</li>
+                    <li className="hover:text-[#f9f5f0] hover:bg-[#805541] rounded p-2">
+                      Login
+                    </li>
                   </Link>
+                  {user && (
+                    <>
+                      <span>{user.email}</span>
+                      <li
+                        className="hover:text-[#f9f5f0] hover:bg-[#805541] rounded p-2"
+                        onClick={handleClick}
+                      >
+                        Log Out
+                      </li>
+                    </>
+                  )}
                 </ul>
               </div>
-              <a className="btn btn-ghost normal-case text-xl lg:inline md:hidden sm:hidden Logo">
+              <a className="btn btn-ghost normal-case text-xl lg:inline hidden Logo">
                 <img
                   className="lg:w-32 ml-10"
                   src="src/assets/Images/Logo2.png"
@@ -66,8 +82,15 @@ export default function Nav() {
               </ul>
             </div>
             <div className="navbar-end">
+              <a className="lg:hidden flex justify-center">
+                <img
+                  className="w-28"
+                  src="src/assets/Images/Logo2.png"
+                  alt=""
+                />
+              </a>
               {!user && (
-                <div>
+                <div className="max-[1024px]:hidden">
                   <Link to="/signup">
                     <a className="btn flex float-right">Register</a>
                   </Link>
