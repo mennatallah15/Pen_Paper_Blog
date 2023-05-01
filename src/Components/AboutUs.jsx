@@ -3,9 +3,9 @@ import "./AboutUs.css";
 export default function AboutUs() {
   return (
     <>
-      <div className="mainAbout flex justify-center align-middle">
-        <div className="containAbout">
-          <div className="AboutTitle max-w-lg mt-36">
+      <div className="mainAbout flex justify-between w-full pb-12">
+        <div className="containAbout px-32 flex flex-col justify-center items-center">
+          <div className="AboutTitle">
             <h1 className="sm:mb-7 lg:text-3xl sm:text-2xl">About Us</h1>
             <p className="lg:text-xl pr-20 md:text-xs sm:text-xs">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel aut

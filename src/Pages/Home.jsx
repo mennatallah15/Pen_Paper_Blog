@@ -55,7 +55,7 @@ export default function Home({
               Categories
             </h1>
             <div className="container mx-auto">
-              <div className="flex flex-wrap mb-12 mt-20 justify-center items-center">
+              <div className="flex flex-wrap mb-12 mt-20 justify-center items-center px-10">
                 {Categories.map((category) => {
                   // {
                   //   console.log(category.id);
@@ -128,7 +128,7 @@ export default function Home({
                     </div>
                   </div>
                 </div>
-                <div className="container mx-auto flex flex-wrap justify-between">
+                <div className="container mx-auto flex flex-wrap justify-between px-10">
                   {FilteredPosts?.map((post) => {
                     // {
                     //   console.log(post?.id);

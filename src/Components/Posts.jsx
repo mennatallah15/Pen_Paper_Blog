@@ -58,7 +58,7 @@ export default function Posts({
   };
 
   return (
-    <div className="sm:w-full px-8 md:w-1/2 lg:w-1/3">
+    <div className="sm:w-full md:w-1/2 lg:w-1/3 lg:px-10">
       <div className="MainPosts mb-20">
         <img className="PostImg w-full mb-5" src={postPhoto} alt="image" />
 

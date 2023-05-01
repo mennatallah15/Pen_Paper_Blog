@@ -37,7 +37,7 @@ export default function BlogDetails() {
             src={form.photo}
           />
         </div>
-        <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+        <div className="w-full md:w-5/12 ml-auto mr-auto px-4 pb-8">
           <div className="md:pr-12">
             <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
               <i className="fas fa-rocket text-xl"></i>
