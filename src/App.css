@@ -1,17 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@100&family=Raleway:wght@100&display=swap");
+
 #root {
   background-color: white;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 769px) {
   .Logo {
     display: none !important;
   }
-  .LargeParagraph {
+  /* .LargeParagraph {
     display: none;
-  }
-  .SmallParagraph {
+  } */
+  /* .SmallParagraph {
     display: none;
-  }
+  } */
   .contain {
     width: 50% !important;
   }

@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 import "./Footer.css";
 export default function Footer() {
   return (
     <div className="ContainFooter p-10">
       <div className="container mx-auto">
-        <footer className="text-center justify-center align-middle p-10 text-black">
+        <footer className="text-center justify-center align-middle p-10 text-[#222222]">
           <div className="FooterImages grid gap-4 mb-12">
             <img
               src="https://selena.pixandhue.com/wp-content/uploads/2022/03/277475746_2122526037905726_8507960304788158944_n-1-320x320.jpg"

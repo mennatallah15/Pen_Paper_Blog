@@ -82,7 +82,7 @@ export default function Nav() {
               </ul>
             </div>
             <div className="navbar-end">
-              <a className="lg:hidden flex justify-center">
+              <a className="lg:hidden flex justify-end">
                 <img
                   className="w-28"
                   src="src/assets/Images/Logo2.png"

@@ -15,18 +15,20 @@
   margin: 0 auto;
 }
 .containTitle {
-  width: 50% !important;
+  width: 60% !important;
   position: relative;
   left: 6rem;
 }
-.containTitle h1 {
-  color: black;
+.containTitle h2 {
+  font-family: "Fraunces", serif;
 }
 .containTitle p {
-  font-size: 0.9rem;
-
-  /* width: 41%; */
-  color: rgba(0, 0, 0, 0.638);
+  font-family: "Raleway", sans-serif;
+  font-size: 16.5px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  /* font-weight: normal; */
+  color: #444444 !important;
 }
 
 .mainDev .photo {
