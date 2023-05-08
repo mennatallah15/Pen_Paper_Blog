@@ -7,14 +7,12 @@
 }
 
 .containAbout {
-  /* position: relative; */
-  /* margin-top: 10rem; */
-  width: 40%;
+  /* width: 60%; */
   color: black;
 }
-.About_Images {
-  /* width: 40%; */
-}
+/* .About_Images {
+  width: 40%;
+} */
 .containAbout .AboutTitle h1 {
   font-size: 48px;
   line-height: 1.3em;
@@ -24,6 +22,10 @@
   text-transform: uppercase;
   color: #111;
   /* padding-right: 10vw; */
+}
+.containAbout .AboutTitle p {
+  font-family: raleway, sans-serif;
+  letter-spacing: 0.5px;
 }
 .mainAbout .Aboutphoto {
   /* width: 30%; */
@@ -39,21 +41,25 @@
 .Aboutphoto img {
   /* max-width: 100%; */
   /* width: 99%; */
-  height: 53vw;
+  /* height: 53vw; */
+  position: relative;
+  right: 0;
 }
 
 .mainAbout .AboutImage {
   position: absolute;
-  margin-top: 4.1rem;
+  /* margin-top: 4.1rem; */
+  z-index: 2;
+
   /* margin-left: 32rem; */
-  left: 55%;
+  /* left: 55%; */
 }
 .AboutImage img {
   position: relative;
   /* max-width: 100%; */
-  width: auto;
   /* width: auto; */
-  height: 45vw;
+  /* width: auto; */
+  /* height: 45vw; */
   object-fit: cover;
   /* overflow: hidden; */
 }

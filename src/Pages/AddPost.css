@@ -20,22 +20,6 @@
   margin-top: 0.6rem;
 }
 
-.AboutImage {
-  width: auto;
-  position: absolute;
-  left: 8%;
-  top: 6%;
-  z-index: 2;
-}
-.AboutImage img {
-  max-width: 100%;
-  /* border-radius: 50% 50% 0 0; */
-  /* width: auto; */
-  height: 40vw;
-  object-fit: cover;
-  overflow: hidden;
-}
-
 /* option[value=""][disabled] {
   display: none;
 } */
