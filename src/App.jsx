@@ -41,6 +41,7 @@ function App() {
     }
 
     getPosts();
+
     getCategories();
   }, []);
 

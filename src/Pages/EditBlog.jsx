@@ -14,7 +14,7 @@ export default function EditBlog({ handleEditPosts }) {
 
   const [form, setForm] = useState({
     title: "",
-    discription: "",
+    description: "",
     photo: "",
     category: "",
     UserId: "",
@@ -28,7 +28,7 @@ export default function EditBlog({ handleEditPosts }) {
       console.log(data);
       setForm({
         title: data.title,
-        discription: data.discription,
+        description: data.description,
         photo: data.photo,
         category: +data.category,
         UserId: data.UserId,
@@ -59,7 +59,7 @@ export default function EditBlog({ handleEditPosts }) {
     await axios
       .patch(`http://localhost:3000/posts/${postid}`, {
         title: form.title,
-        discription: form.discription,
+        description: form.description,
         photo: window.URL.createObjectURL(Image),
         category: +form.category,
         UserId: form.UserId,
@@ -89,9 +89,9 @@ export default function EditBlog({ handleEditPosts }) {
               />
               <input
                 className="input w-full max-w-xs mb-2"
-                label="Discription"
-                name="discription"
-                value={form.discription}
+                label="description"
+                name="description"
+                value={form.description}
                 onChange={handleChange}
               />
               <div className="form-control w-full max-w-xs">

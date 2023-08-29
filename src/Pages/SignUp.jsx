@@ -14,9 +14,9 @@ const schema = yup
     Age: yup.number().positive().integer().required("You must enter your age"),
     Email: yup.string().email().required("You must enter your email"),
     Password: yup
-      .number()
-      .positive()
-      .integer()
+      .number("You must enter numbers")
+      .positive("You must enter numbers")
+      .integer("You must enter numbers")
       .required("You must enter your password"),
     ConfirmPassword: yup
       .number()

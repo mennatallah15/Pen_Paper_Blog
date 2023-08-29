@@ -7,7 +7,7 @@ export default function BlogDetails() {
 
   const [form, setForm] = useState({
     title: "",
-    discription: "",
+    description: "",
     photo: "",
     category: "",
   });
@@ -18,7 +18,7 @@ export default function BlogDetails() {
       console.log(data);
       setForm({
         title: data.title,
-        discription: data.discription,
+        description: data.description,
         photo: data.photo,
         category: +data.category,
       });
@@ -34,19 +34,19 @@ export default function BlogDetails() {
           <img
             alt="..."
             className="max-w-full rounded-lg shadow-lg"
-            src={form.photo}
+            src={"../" + form.photo}
           />
         </div>
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4 pb-8">
           <div className="md:pr-12">
-            <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300 mt-8">
+            <div className="text-amber-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-amber-200 mt-8">
               <i className="fas fa-rocket text-xl"></i>
             </div>
             <h3 className="text-3xl font-semibold text-amber-900">
               {form.title}
             </h3>
             <p className="mt-4 text-lg leading-relaxed text-blueGray-500 text-black">
-              {form.discription}
+              {form.description}
             </p>
           </div>
         </div>
