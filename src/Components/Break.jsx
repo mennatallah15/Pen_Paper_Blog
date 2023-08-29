@@ -17,7 +17,7 @@ export default function Break() {
         <p className="text-lg leading-8 text-gray-300 pt-10 mb-8 font-[500]">
           LETS GET STARTED
         </p>
-        <h2 className="text-3xl font-bold tracking-tight text-white sm:text-6xl mb-8 flex justify-center items-center">
+        <h2 className="text-4xl font-bold tracking-tight text-white mb-8 flex justify-center items-center">
           Filter Blogs By Category!
         </h2>
         <p className="text-lg leading-8 text-gray-300">

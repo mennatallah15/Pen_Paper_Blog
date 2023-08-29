@@ -137,11 +137,11 @@ export default function Home({
                       <Posts
                         key={post?.id}
                         PostId={post?.id}
-                        UserID={post?.UserId}
+                        UserID={+post?.UserId}
                         postTitle={post?.title}
                         postPhoto={post?.photo}
-                        postDes={post?.discription}
-                        postCat={post?.category}
+                        postDes={post?.description}
+                        postCat={+post?.category}
                         post={post}
                         handelDeletePosts={handelDeletePosts}
                       />

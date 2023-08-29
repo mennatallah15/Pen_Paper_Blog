@@ -31,7 +31,7 @@ function AddPost(props) {
     resolver: yupResolver(schema),
   });
 
-  const [Image, setImage] = useState();
+  const [Image, setImage] = useState(null);
 
   const TitleVal = watch("Title");
   const LastVal = watch("Description");
@@ -39,28 +39,47 @@ function AddPost(props) {
 
   const onSubmit = async (data) => {
     let UserId = user.user.id;
+
+    const formData = new FormData();
+    formData.append("title", data.Title);
+    formData.append("description", data.Description);
+    formData.append("photo", Image);
+    formData.append("category", data.Category);
+    formData.append("UserId", UserId);
     // console.log(UserId);
     // console.log(data);
     // console.log(data.ImageFile[0].name);
     // console.log(data.Title);
-    // console.log(data.Category);
     // const ImageSrc = data.ImageFile[0].name;
+    console.log("photooooooooooo", formData);
 
     const AddData = async () => {
+      // await axios
+      //   .post("http://localhost:3000/posts", {
+      //     title: data.Title,
+      //     description: data.Description,
+      //     photo: URL.createObjectURL(Image),
+      //     // photo: formData,
+      //     category: +data.Category,
+      //     UserId: +UserId,
+      //   })
+      //   .then((response) => {
+      //     // console.log("data: ", response.data);
+      //     // console.log(data.Title);
+      //     props.AddPosts(response.data);
+      //   })
+      //   .catch((error) => console.log(error));
+
       await axios
-        .post("http://localhost:3000/posts", {
-          title: data.Title,
-          discription: data.Description,
-          photo: URL.createObjectURL(Image),
-          category: +data.Category,
-          UserId: +UserId,
+        .post("http://localhost:3000/posts", formData, {
+          headers: { "Content-Type": "multipart/form-data" },
         })
-        .then((response) => {
-          // console.log("data: ", response.data);
-          // console.log(data.Title);
-          props.AddPosts(response.data);
+        .then((res) => {
+          console.log("photo res", res);
+          console.log("photo data", res.data);
+          props.AddPosts(res.data);
         })
-        .catch((error) => console.log(error));
+        .catch((error) => console.log("post error", error));
     };
     await AddData();
     navigate("/");

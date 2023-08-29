@@ -61,6 +61,14 @@ export default function Posts({
     <div className="sm:w-full md:w-1/2 lg:w-1/3 lg:px-10">
       <div className="MainPosts mb-20">
         <img className="PostImg w-full mb-5" src={postPhoto} alt="image" />
+        {/* {photoo.map((photo) => (
+          <img
+            key={photo.id}
+            className="PostImg w-full mb-5"
+            src={photo.url}
+            alt="image"
+          />
+        ))} */}
 
         <div>
           <div className="flex justify-between">

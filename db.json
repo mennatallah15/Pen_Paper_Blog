@@ -1,19 +1,118 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "title": "Adobe Summit 2023: Adobe Experience Cloud goes next level",
+      "description": "Today we kicked off Summit 2023, the world’s largest digital experience conference, unveiling innovations and breakthrough advances in Adobe Experience Cloud that empower our customers to harness experience-led growth to differentiate their brand, build trust and drive profitability. make the digital economy personal, with powerful digital experiences that can be personalized. This year marks Summit’s first return to Las Vegas since 2019, in a hybrid in-person and virtual format powered by Adobe Experience Cloud.",
+      "photo": "https://selena.pixandhue.com/wp-content/uploads/2022/02/haute-stock-photography-blog1.png",
+      "category": 1,
+      "UserId": 1,
+      "id": 1
+    },
+    {
+      "title": "Responsible innovation in the age of generative AI",
+      "description": "Generative AI is changing the way we all think about creativity. Type “3D render of a paper dragon, studio style photography” and you’re instantly offered multiple variations of a portrait of a ferocious origami creature — or combine a few data points with simple instruction and a chatbot can spit out a compelling marketing email. It’s easy to see the power this technology can unlock for individual creators and businesses alike. Generative AI lets people paint with text instead of pixels (or paint). On the business side, it lets you connect with customers efficiently through auto-generated texts, emails, and content. And implemented the right way, generative AI brings precision, power, speed, and ease to your existing workflows — allowing people to focus on more strategic or creative parts of their work.",
+      "photo": "https://selena.pixandhue.com/wp-content/uploads/2022/02/haute-stock-photography-blog3.png",
+      "category": 2,
+      "UserId": 1,
+      "id": 2
+    },
+    {
+      "title": "Blog 3",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://selena.pixandhue.com/wp-content/uploads/2022/03/haute-stock-photography-8.jpg",
+      "category": 1,
+      "UserId": 1,
+      "id": 3
+    },
+    {
+      "title": "Meet AutoManage, the best AI management tools",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://i.pinimg.com/originals/d9/61/eb/d961eb0a3b0090a67a13dc974ce0ee6d.jpg",
+      "category": 2,
+      "UserId": 1,
+      "id": 4
+    },
+    {
+      "title": "Blog 5",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://pbs.twimg.com/media/DSZLiTPXkAc6L_p.jpg",
+      "UserId": 1,
+      "category": 1,
+      "id": 5
+    },
+    {
+      "title": "Blog 6",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "photo": "https://i.pinimg.com/originals/5c/00/88/5c00884764ceb3cfe3f7b14ce56d881a.jpg",
+      "UserId": 1,
+      "category": 2,
+      "id": 6
+    },
+    {
+      "title": "helllo",
+      "description": "pkkkk",
+      "photo": "uploads/tnamvawv.jpg",
+      "category": "NaN",
+      "UserId": "12",
+      "id": 7
+    },
+    {
+      "title": "hello new photos",
+      "description": "iam proud",
+      "photo": "uploads/r32k4h6w.jpg",
+      "category": "NaN",
+      "UserId": "12",
+      "id": 8
+    },
+    {
+      "title": "hello num",
+      "description": "hello title",
+      "photo": "uploads/uc0d6dbo.png",
+      "category": "NaN",
+      "UserId": "12",
+      "id": 9
+    },
+    {
+      "title": "hello again",
+      "description": "okkk",
+      "photo": "uploads/ts9ficew.jpg",
+      "category": "3",
+      "UserId": "12",
+      "id": 10
+    },
+    {
+      "title": "hello cat",
+      "description": "hello dog",
+      "photo": "uploads/o5ivy27p.png",
+      "category": "3",
+      "UserId": "12",
+      "id": 11
     }
   ],
-  "comments": [
+  "categories": [
+    {
+      "id": 0,
+      "name": "All Blogs"
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Food"
+    },
+    {
+      "id": 2,
+      "name": "Education"
+    },
+    {
+      "id": 3,
+      "name": "Fashion"
+    },
+    {
+      "id": 4,
+      "name": "Health"
+    },
+    {
+      "id": 5,
+      "name": "Technology"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
