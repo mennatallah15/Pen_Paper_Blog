@@ -22,7 +22,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
   const { login, error, isLoading } = useLogin();
 
-  const onSubmit = async (data) => {
+  const onSubmit = async () => {
     // e.preventDefault();
 
     // console.log(email, password);
@@ -89,8 +89,8 @@ const Login = () => {
           </div>
         </div>
         <div className="LoginPhoto xl:flex lg:flex justify-center items-center sm:none">
-          <img src="https://kartinkin.net/uploads/posts/2022-02/1645897265_73-kartinkin-net-p-kartinki-volshebstvo-78.jpg" />
-          {/* <img src="https://pbs.twimg.com/media/DSZLiTPXkAc6L_p.jpg" alt="" /> */}
+          {/* <img src="https://kartinkin.net/uploads/posts/2022-02/1645897265_73-kartinkin-net-p-kartinki-volshebstvo-78.jpg" /> */}
+          <img src="https://pbs.twimg.com/media/DSZLiTPXkAc6L_p.jpg" alt="" />
           {/* <img
             src="https://vovomusic.com/collection_images/2124/0.jpg"
             alt=""
