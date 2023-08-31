@@ -28,11 +28,28 @@ export default function Nav() {
     if (user) getUser();
   }, [user]);
 
-  const [profilePhoto, setProfilePhoto] = useState(null);
+  const [profileImg, setProfileImg] = useState("");
 
   console.log("userrr", loggedUser?.email);
   const handleClick = () => {
     logout();
+  };
+
+  const handlePhoto = (img) => {
+    console.log(img);
+    // const obj = { ...loggedUser };
+    // delete obj["profilePhoto"];
+    setLoggedUser(
+      // obj,
+      // { profilePhoto: img }
+      {
+        email: loggedUser?.email,
+        password: loggedUser?.password,
+        profilePhoto: img,
+        id: loggedUser?.id,
+      }
+    );
+    console.log(loggedUser);
   };
 
   return (
@@ -131,11 +148,11 @@ export default function Nav() {
                 >
                   <img
                     className="btn-circle w-16 h-16"
-                    src="../src/assets/Images/seaGirl.jpg"
+                    src={loggedUser?.profilePhoto}
                     alt="photo of the user"
                   />
                   <span className="overflow-hidden text-clip">
-                    {user?.user?.email}
+                    {loggedUser?.email}
                   </span>
 
                   <div className="absolute top-20 mt-1 z-10 hidden group-hover:flex flex-col items-center">
@@ -144,8 +161,10 @@ export default function Nav() {
                     </div>
                     <div className="w-64 bg-white p-4 flex flex-col items-start gap-4 cursor-auto">
                       <ChangePhoto
-                        setProfilePhoto={setProfilePhoto}
+                        setProfileImg={setProfileImg}
+                        profileImg={profileImg}
                         loggedUser={loggedUser}
+                        handlePhoto={handlePhoto}
                       />
                       <button className="" onClick={handleClick}>
                         Log Out
