@@ -42,6 +42,9 @@ const SignUp = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [ConfirmPassword, setConfirmPassword] = useState("");
+  const [profilePhoto, setProfilePhoto] = useState(
+    "src/assets/Images/seaGirl.jpg"
+  );
 
   const { SignUp, error, isLoading } = useSignup();
 
@@ -51,7 +54,7 @@ const SignUp = () => {
     if (data.Password !== data.ConfirmPassword) {
       toast.error("Password didn't match");
     } else {
-      await SignUp(email, password);
+      await SignUp(email, password, profilePhoto);
       navigate("/");
     }
     // console.log(email, password);

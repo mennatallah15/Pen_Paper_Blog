@@ -77,7 +77,7 @@ export default function Home({
             {user && (
               <Link to="/addPost">
                 <button className="AddBtn mb-8 mr-5 bottom-0 right-0 fixed w-10">
-                  <img src="src/assets/Images/plus (1).png" alt="Addbutton" />
+                  <img src="src/assets/Images/plus (1).png" alt="Add Button" />
                 </button>
               </Link>
             )}
@@ -88,7 +88,7 @@ export default function Home({
                   htmlFor="my-modal-6"
                   className="AddBtn mb-8 mr-5 bottom-0 right-0 fixed w-10 cursor-pointer"
                 >
-                  <img src="src/assets/Images/plus (1).png" alt="Addbutton" />
+                  <img src="../assets/Images/plus (1).png" alt="Add Button" />
                 </label>
                 {/* Put this part before </body> tag */}
                 <input

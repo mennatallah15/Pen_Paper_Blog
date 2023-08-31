@@ -1,6 +1,5 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import Posts from "../Components/Posts";
 import "./AddPost.css";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
@@ -46,30 +45,10 @@ function AddPost(props) {
     formData.append("photo", Image);
     formData.append("category", data.Category);
     formData.append("UserId", UserId);
-    // console.log(UserId);
-    // console.log(data);
-    // console.log(data.ImageFile[0].name);
-    // console.log(data.Title);
-    // const ImageSrc = data.ImageFile[0].name;
+
     console.log("photooooooooooo", formData);
 
     const AddData = async () => {
-      // await axios
-      //   .post("http://localhost:3000/posts", {
-      //     title: data.Title,
-      //     description: data.Description,
-      //     photo: URL.createObjectURL(Image),
-      //     // photo: formData,
-      //     category: +data.Category,
-      //     UserId: +UserId,
-      //   })
-      //   .then((response) => {
-      //     // console.log("data: ", response.data);
-      //     // console.log(data.Title);
-      //     props.AddPosts(response.data);
-      //   })
-      //   .catch((error) => console.log(error));
-
       await axios
         .post("http://localhost:3000/posts", formData, {
           headers: { "Content-Type": "multipart/form-data" },

@@ -2,13 +2,35 @@ import { Link } from "react-router-dom";
 import { useLogout } from "../hooks/useLogout";
 import "./Nav.css";
 import { useAuthContext } from "../hooks/useAuthContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ChangePhoto from "./ChangePhoto";
+import axios from "axios";
 
 export default function Nav() {
+  const [loggedUser, setLoggedUser] = useState([]);
+
   const { logout } = useLogout();
   const { user } = useAuthContext();
 
-  console.log("userrr", user?.user?.email);
+  useEffect(() => {
+    async function getUser() {
+      try {
+        const { data } = await axios.get(
+          `http://localhost:3001/users/${user?.user?.id}`
+        );
+        setLoggedUser(data);
+      } catch (error) {
+        console.log("Error in get User", error);
+      }
+    }
+    // getUser();
+
+    if (user) getUser();
+  }, [user]);
+
+  const [profilePhoto, setProfilePhoto] = useState(null);
+
+  console.log("userrr", loggedUser?.email);
   const handleClick = () => {
     logout();
   };
@@ -84,7 +106,7 @@ export default function Nav() {
           </div>
           <div className="navbar-end flex justify-end">
             <a className="lg:hidden flex justify-end">
-              <img className="w-28" src="src/assets/Images/Logo2.png" alt="" />
+              <img className="w-28" src={loggedUser?.profilePhoto} alt="" />
             </a>
             {!user && (
               <div className="max-[1024px]:hidden">
@@ -121,7 +143,10 @@ export default function Nav() {
                       &nbsp;
                     </div>
                     <div className="w-64 bg-white p-4 flex flex-col items-start gap-4 cursor-auto">
-                      <button className="">Change Profile Photo</button>
+                      <ChangePhoto
+                        setProfilePhoto={setProfilePhoto}
+                        loggedUser={loggedUser}
+                      />
                       <button className="" onClick={handleClick}>
                         Log Out
                       </button>
