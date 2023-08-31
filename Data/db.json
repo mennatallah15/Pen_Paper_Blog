@@ -76,6 +76,20 @@
       "email": "menna444@gmail.com",
       "password": "$2a$10$.5nGoUC1mL5Za759CZNkWu5h3Rlg8tABGktmfPBiyg2vkZJJNenwu",
       "id": 13
+    },
+    {
+      "email": "new1@site.com",
+      "password": "$2a$10$cLhFATkkcf5oNhlyl.1d9uWGfyX221yKbqNpyD7kf39iUlbNhlMCi",
+      "profilePhoto": "src/assets/Images/seaGirl.jpg",
+      "id": 14,
+      "{\"email\":\"new@site.com\",\"password\":\"1234567\"}": "",
+      "{\"email\":\"new1@site.com\",\"password\":\"1234567\"}": ""
+    },
+    {
+      "email": "new1@site.com",
+      "password": "$2a$10$Bbclg5K2in2Of0FtjvUk.uWTuOPO8eHGhmUdw2nPKVR03SJaYwXTC",
+      "profilePhoto": "src/assets/Images/seaGirl.jpg",
+      "id": 15
     }
   ]
 }

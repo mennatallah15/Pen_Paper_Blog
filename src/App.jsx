@@ -30,18 +30,21 @@ function App() {
         const { data } = await axios.get("http://localhost:3000/posts");
         // console.log(data);
         SetPosts(data);
-      } catch (error) {}
+      } catch (error) {
+        console.log("Error in get Posts", error);
+      }
     }
 
     async function getCategories() {
       try {
         const { data } = await axios.get("http://localhost:3000/categories");
         setCategories(data);
-      } catch (error) {}
+      } catch (error) {
+        console.log("Error in get Categories", error);
+      }
     }
 
     getPosts();
-
     getCategories();
   }, []);
 
