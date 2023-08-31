@@ -1,48 +1,77 @@
-import React, { useRef } from "react";
+import React, { useEffect, useMemo, useRef } from "react";
 import axios from "axios";
 
-const ChangePhoto = ({ setProfilePhoto, loggedUser }) => {
+const ChangePhoto = ({
+  setProfileImg,
+  profileImg,
+  loggedUser,
+  handlePhoto,
+}) => {
   const inputFile = useRef(null);
 
   const HandleClick = () => {
     inputFile.current.click();
   };
 
-  var params = {
-    email: "new1@site.com",
-    password: "1234567",
-  };
   console.log("userr", loggedUser);
   const ChangeYourPhoto = async (e) => {
     if (e.target.files[0]) {
       const formData = new FormData();
-      // formData.append("profilePhoto", e.target.files[0]);
-      formData.append("email", "new2@site.com");
+      formData.append("image", e.target.files[0]);
 
       console.log("obj", formData);
-      const ChangeUserPhoto = async () => {
+      const UploadImg = async () => {
         await axios
-          .patch(`http://localhost:3001/users/${loggedUser?.id}`, formData, {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-            // headers: {
-            //   "Content-Type": "application/json",
-            // },
-          })
+          .post(
+            "https://api.imgbb.com/1/upload?key=6e30f61e7611445cc2e108b5a75c8416",
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          )
           .then((res) => {
             console.log("photo res", res);
-            console.log("photo data", res.data);
-            // props.AddPosts(res.data);
+            console.log("photo data", res?.data?.data);
+
+            setProfileImg(res?.data?.data?.display_url);
           })
-          .catch((error) => console.log("update error", error));
+
+          .catch((error) => console.log("post error", error));
       };
-      await ChangeUserPhoto();
+
+      await UploadImg();
+
       // navigate("/");
       //   setProfilePhoto(e.target.files[0]);
       // console.log(e.target.files[0]);
     }
   };
+
+  useEffect(() => {
+    if (profileImg) {
+      console.log("urllllllll", profileImg);
+      handlePhoto(profileImg);
+
+      axios
+        .patch(
+          `http://localhost:3001/users/${loggedUser?.id}`,
+          { profilePhoto: profileImg },
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+        .then((res) => {
+          console.log("api res", res);
+          console.log("api data", res?.data);
+          // props.AddPosts(res.data);
+        })
+        .catch((error) => console.log("update error", error));
+    }
+  }, [profileImg]);
 
   return (
     <>

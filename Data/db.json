@@ -88,7 +88,7 @@
     {
       "email": "new1@site.com",
       "password": "$2a$10$Bbclg5K2in2Of0FtjvUk.uWTuOPO8eHGhmUdw2nPKVR03SJaYwXTC",
-      "profilePhoto": "src/assets/Images/seaGirl.jpg",
+      "profilePhoto": "https://i.ibb.co/YNqXnT8/blog1.jpg",
       "id": 15
     }
   ]
