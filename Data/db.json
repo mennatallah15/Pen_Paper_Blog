@@ -70,7 +70,8 @@
     {
       "email": "menna45@gmail.com",
       "password": "$2a$10$TfPijHi953CCPz4n6TOe8OiSvTJttXHmAEoH91kFsa.gz900wwVo2",
-      "id": 12
+      "id": 12,
+      "profilePhoto": "https://i.ibb.co/hY5VF0N/6c10e6736828d77276c81c3065ad86ca.jpg"
     },
     {
       "email": "menna444@gmail.com",
@@ -90,6 +91,12 @@
       "password": "$2a$10$Bbclg5K2in2Of0FtjvUk.uWTuOPO8eHGhmUdw2nPKVR03SJaYwXTC",
       "profilePhoto": "https://i.ibb.co/YNqXnT8/blog1.jpg",
       "id": 15
+    },
+    {
+      "email": "hello2@gmail.com",
+      "password": "$2a$10$/HoX.R6pE6nSweo1bIc9Juf/MyThI3MgQI4/6aMchqAGMIaxIuQYK",
+      "profilePhoto": "src/assets/Images/seaGirl.jpg",
+      "id": 16
     }
   ]
 }

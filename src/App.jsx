@@ -20,6 +20,8 @@ function App() {
 
   const [Categories, setCategories] = useState([]);
 
+  const [allUsers, setAllUsers] = useState([]);
+
   const [currentPage, setCurrentPage] = useState(1);
 
   let noOfPages = 1;
@@ -44,10 +46,21 @@ function App() {
       }
     }
 
+    async function getAllUsers() {
+      try {
+        const { data } = await axios.get("http://localhost:3001/users");
+        setAllUsers(data);
+      } catch (error) {
+        console.log("Error in get Users", error);
+      }
+    }
+
     getPosts();
     getCategories();
+    getAllUsers();
   }, []);
 
+  console.log("AllUsers", allUsers);
   const [CurrentCategory, setCurrentCategory] = useState(0);
 
   const changeCurrentCategory = (id) => {
@@ -102,6 +115,8 @@ function App() {
                 changeCurrentCategory={changeCurrentCategory}
                 changeCurrentPage={changeCurrentPage}
                 handelDeletePosts={handelDeletePosts}
+                allUsers={allUsers}
+                setAllUsers={setAllUsers}
               />
             }
           />
