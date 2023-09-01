@@ -41,52 +41,20 @@
       "id": 5
     },
     {
-      "title": "Blog 6",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      "photo": "https://i.pinimg.com/originals/5c/00/88/5c00884764ceb3cfe3f7b14ce56d881a.jpg",
-      "UserId": 1,
-      "category": 2,
+      "title": "hello",
+      "description": "hekkid",
+      "photo": "uploads/uir6xz6y.jpg",
+      "category": "2",
+      "UserId": "12",
       "id": 6
     },
     {
-      "title": "helllo",
-      "description": "pkkkk",
-      "photo": "uploads/tnamvawv.jpg",
-      "category": "NaN",
-      "UserId": "12",
+      "title": "my post",
+      "description": "hamada",
+      "photo": "uploads/mplar15x.webp",
+      "category": "4",
+      "UserId": "16",
       "id": 7
-    },
-    {
-      "title": "hello new photos",
-      "description": "iam proud",
-      "photo": "uploads/r32k4h6w.jpg",
-      "category": "NaN",
-      "UserId": "12",
-      "id": 8
-    },
-    {
-      "title": "hello num",
-      "description": "hello title",
-      "photo": "uploads/uc0d6dbo.png",
-      "category": "NaN",
-      "UserId": "12",
-      "id": 9
-    },
-    {
-      "title": "hello again",
-      "description": "okkk",
-      "photo": "uploads/ts9ficew.jpg",
-      "category": "3",
-      "UserId": "12",
-      "id": 10
-    },
-    {
-      "title": "hello cat",
-      "description": "hello dog",
-      "photo": "uploads/o5ivy27p.png",
-      "category": "3",
-      "UserId": "12",
-      "id": 11
     }
   ],
   "categories": [
@@ -114,6 +82,5 @@
       "id": 5,
       "name": "Technology"
     }
-  ],
-  "profilePhotos": []
+  ]
 }

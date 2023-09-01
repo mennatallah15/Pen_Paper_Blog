@@ -37,13 +37,14 @@ function AddPost(props) {
   const CatVal = watch("Category");
 
   const onSubmit = async (data) => {
-    let UserId = user.user.id;
+    let UserId = user?.user?.id;
 
+    console.log("dataaaaaaaaa", data);
     const formData = new FormData();
-    formData.append("title", data.Title);
-    formData.append("description", data.Description);
+    formData.append("title", data?.Title);
+    formData.append("description", data?.Description);
     formData.append("photo", Image);
-    formData.append("category", data.Category);
+    formData.append("category", data?.Category);
     formData.append("UserId", UserId);
 
     console.log("photooooooooooo", formData);

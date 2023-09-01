@@ -21,15 +21,17 @@ export default function Home({
   currentPage,
   changeCurrentPage,
   handelDeletePosts,
+  allUsers,
+  setAllUsers,
 }) {
   const { user } = useAuthContext();
-
+  const [Id, setId] = useState(0);
   /////////filter///////
   let FilteredPosts = useMemo(() => {
     console.log("Memo run!!!");
     return CurrentCategory === 0
       ? posts
-      : posts.filter((post) => post.category === CurrentCategory);
+      : posts.filter((post) => +post.category === CurrentCategory);
   }, [posts, CurrentCategory]);
 
   noOfPages = Math.ceil(FilteredPosts?.length / pageSize);
@@ -144,6 +146,10 @@ export default function Home({
                         postCat={+post?.category}
                         post={post}
                         handelDeletePosts={handelDeletePosts}
+                        allUsers={allUsers}
+                        // setAllUsers={setAllUsers}
+                        Id={Id}
+                        setId={setId}
                       />
                     );
                   })}
