@@ -49,12 +49,20 @@
       "id": 6
     },
     {
-      "title": "my post",
+      "title": "my post edit",
       "description": "hamada",
-      "photo": "uploads/mplar15x.webp",
+      "photo": "uploads/r4ah75y6.jpg",
       "category": "4",
       "UserId": "16",
       "id": 7
+    },
+    {
+      "title": "test",
+      "description": "hello",
+      "photo": "uploads/egn3jn5s.png",
+      "category": "5",
+      "UserId": "16",
+      "id": 8
     }
   ],
   "categories": [

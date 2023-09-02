@@ -56,14 +56,25 @@ export default function EditBlog({ handleEditPosts }) {
   };
 
   const handleEdit = async (data) => {
+    const formData = new FormData();
+    formData.append("title", form.title);
+    formData.append("description", form.description);
+    formData.append("photo", Image);
+    formData.append("category", +form.category);
+    formData.append("UserId", +form.UserId);
+
     await axios
-      .patch(`http://localhost:3000/posts/${postid}`, {
-        title: form.title,
-        description: form.description,
-        photo: window.URL.createObjectURL(Image),
-        category: +form.category,
-        UserId: form.UserId,
-      })
+      .patch(
+        `http://localhost:3000/posts/${postid}`,
+        formData
+        // {
+        //   title: form.title,
+        //   description: form.description,
+        //   photo: Image,
+        //   category: +form.category,
+        //   UserId: form.UserId,
+        // }
+      )
       .then((response) => {
         console.log(response);
         console.log("data", response.data);
@@ -78,7 +89,7 @@ export default function EditBlog({ handleEditPosts }) {
       <div className="Container-Form">
         <div className="register flex container mx-auto justify-center">
           <div className="Form mt-3">
-            <h1>Add New Post</h1>
+            <h1>Edit the Post</h1>
             <form className="mt-8" onSubmit={handleSubmit}>
               <input
                 className="input w-full max-w-xs mb-2"
