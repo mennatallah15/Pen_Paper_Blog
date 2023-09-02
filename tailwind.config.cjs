@@ -30,5 +30,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [require("daisyui", "@tailwindcss/line-clamp")],
+  plugins: [require("daisyui"), require("@tailwindcss/line-clamp")],
 };
