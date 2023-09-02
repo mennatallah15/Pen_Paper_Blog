@@ -24,8 +24,6 @@ export default function Posts({
   handelDeletePosts,
   post,
   allUsers,
-  Id,
-  setId,
 }) {
   const navigate = useNavigate();
   // let postDeleted = post;
@@ -70,19 +68,45 @@ export default function Posts({
   console.log("FilteredUser", FilteredUser);
   return (
     <div className="sm:w-full md:w-1/2 lg:w-1/3 lg:px-10">
-      <div className="MainPosts mb-20">
-        <img className="PostImg w-full mb-5" src={postPhoto} alt="image" />
-        {/* {photoo.map((photo) => (
-          <img
-            key={photo.id}
-            className="PostImg w-full mb-5"
-            src={photo.url}
-            alt="image"
-          />
-        ))} */}
-
+      <div className="relative MainPosts mb-20">
+        <div className="relative mb-5">
+          <img className="PostImg w-full" src={postPhoto} alt="image" />
+          <span className="absolute bottom-5 left-5 bg-primary inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
+            {postCat === 1
+              ? "Food"
+              : postCat === 2
+              ? "Education"
+              : postCat === 3
+              ? "Fashion"
+              : postCat === 4
+              ? "Health"
+              : postCat === 5
+              ? "Technology"
+              : ""}
+          </span>
+        </div>
+        {/* <div className="absolute top-0">
+          
+        </div> */}
         <div>
-          <div className="flex justify-between mb-5">
+          <Link to={`/Blog/${PostId}`}>
+            <h3>
+              <a
+                href="#"
+                className="text-dark hover:text-primary mb-3 inline-block font-semibold sm:text-2xl lg:text-xl"
+              >
+                {postTitle}
+              </a>
+            </h3>
+
+            <p className="line-clamp-3 break-words">{postDes}</p>
+          </Link>
+
+          {/* <button className="text-xl hover:text-primary font-semibold mt-2">
+              Read More
+            </button> */}
+
+          <div className="flex justify-between mt-6">
             <div>
               <img
                 className="btn-circle w-12 h-12"
@@ -90,19 +114,19 @@ export default function Posts({
                 alt="photo of the user"
               />
             </div>
-            <div className="flex flex-col gap-2">
+            <div>
               {+UserID === UserId ? (
-                <div className="flex gap-8 mr-7">
+                <div className="flex gap-4">
                   <Link to={`/editpost/${PostId}`}>
                     <div>
-                      <button className="btn btn-primary btn-xs">
+                      <button className="btn btn-primary btn-sm">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
                           viewBox="0 0 24 24"
                           strokeWidth={1.5}
                           stroke="currentColor"
-                          className="w-3 h-3"
+                          className="w-5 h-5"
                         >
                           <path
                             strokeLinecap="round"
@@ -116,7 +140,7 @@ export default function Posts({
                   <div>
                     <button
                       onClick={() => handleDelete(post)}
-                      className="btn btn-primary btn-xs"
+                      className="btn btn-primary btn-sm"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -124,7 +148,7 @@ export default function Posts({
                         viewBox="0 0 24 24"
                         strokeWidth={1.5}
                         stroke="currentColor"
-                        className="w-3 h-3"
+                        className="w-5 h-5"
                       >
                         <path
                           strokeLinecap="round"
@@ -138,42 +162,8 @@ export default function Posts({
               ) : (
                 ""
               )}
-
-              <span className="bg-primary inline-block rounded py-1 px-4 text-center text-xs font-semibold leading-loose text-white">
-                {postCat === 1
-                  ? "Food"
-                  : postCat === 2
-                  ? "Education"
-                  : postCat === 3
-                  ? "Fashion"
-                  : postCat === 4
-                  ? "Health"
-                  : postCat === 5
-                  ? "Technology"
-                  : ""}
-              </span>
             </div>
           </div>
-          <Link to={`/Blog/${PostId}`}>
-            <h3>
-              <a
-                href="#"
-                className="text-dark hover:text-primary mb-2 inline-block text-xl font-semibold sm:text-2xl lg:text-xl xl:text-2xl"
-              >
-                {postTitle}
-              </a>
-            </h3>
-          </Link>
-          <div className="block w-[20rem]">
-            <p className="text-body-color text-base truncate block">
-              {postDes}
-            </p>
-          </div>
-          <Link to={`/Blog/${PostId}`}>
-            <button className="text-xl hover:text-primary font-semibold mt-2">
-              Read More
-            </button>
-          </Link>
         </div>
       </div>
     </div>

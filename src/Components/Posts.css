@@ -19,6 +19,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
 } */
+
 @media (max-width: 750px) {
   .PostImg {
     height: 40vw;

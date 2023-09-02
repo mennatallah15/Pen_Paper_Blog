@@ -25,7 +25,7 @@ export default function Home({
   setAllUsers,
 }) {
   const { user } = useAuthContext();
-  const [Id, setId] = useState(0);
+  // const [Id, setId] = useState(0);
   /////////filter///////
   let FilteredPosts = useMemo(() => {
     console.log("Memo run!!!");
@@ -148,8 +148,8 @@ export default function Home({
                         handelDeletePosts={handelDeletePosts}
                         allUsers={allUsers}
                         // setAllUsers={setAllUsers}
-                        Id={Id}
-                        setId={setId}
+                        // Id={Id}
+                        // setId={setId}
                       />
                     );
                   })}
